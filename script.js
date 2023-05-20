@@ -30,6 +30,7 @@ btn.addEventListener("click", function () {
 
 // console.log(parseInt("24.533ccc"));
 
+/*
 function calcFactAge(year) {
   const currentYear = new Date().getFullYear();
   const age = currentYear - year;
@@ -39,6 +40,7 @@ function calcFactAge(year) {
 
   return age;
 }
+
 
 const age1 = calcFactAge(2015);
 console.log(age1);
@@ -93,3 +95,16 @@ const str = `The current fact is "${text}". It is ${calcFactAge(
 }.`;
 console.log(str);
 */
+
+const fact = ["Lisbon is the capital of Portugal", 2015, true, "something"];
+console.log(fact);
+console.log(fact[0]);
+console.log(fact.length);
+console.log(fact[fact.length - 1]);
+
+const [text, createdIn, isCorrect] = fact;
+console.log(text);
+console.log(createdIn);
+
+const newFact = [...fact, "society"]; // 3 dots (spread operator) unpack the original array
+console.log(newFact);
