@@ -43,6 +43,8 @@ const CATEGORIES = [
   { name: "news", color: "#8b5cf6" },
 ];
 
+// console.log(CATEGORIES.find((cat) => cat.name === "society").color);
+
 // Selecting DOM elements
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
@@ -67,6 +69,9 @@ async function loadFacts() {
     }
   );
   const data = await res.json();
+
+  //   const filteredData = data.filter((fact) => fact.category === "society");
+
   createFactsList(data);
 }
 
@@ -84,7 +89,9 @@ function createFactsList(dataArray) {
         >(Source)</a>
     </p>
     <span class="tag" style="background-color:
-    #3b82f6">${fact.category}</span>
+    ${CATEGORIES.find((cat) => cat.name === fact.category).color}">${
+      fact.category
+    }</span>
     </li>`
   );
   const html = htmlArr.join("");
