@@ -64,3 +64,12 @@ if (votesMindblowing) {
 } else {
   console.log("Not so special...");
 }
+
+let votesFalse = 7;
+const totalUpvotes = votesInteresting + votesMindblowing;
+
+const message =
+  totalUpvotes > votesFalse
+    ? "The fact is true"
+    : "Might be false, check more sources...";
+// alert(message);
