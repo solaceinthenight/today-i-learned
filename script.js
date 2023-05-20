@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
 
@@ -29,3 +27,14 @@ const isCorrect = votesFalse < totalUpvotes;
 const isEqual = votesFalse === totalUpvotes;
 console.log(isCorrect);
 console.log(isEqual);
+
+console.log(parseInt("24.533ccc"));
+
+function calcFactAge(year) {
+  const currentYear = new Date().getFullYear();
+  const age = currentYear - year;
+  return age;
+}
+
+const age1 = calcFactAge(2015);
+console.log(age1);
