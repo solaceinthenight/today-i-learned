@@ -11,6 +11,10 @@ body {
   padding: 40px 64px;
 }
 
+.hidden {
+  display: None !important;
+}
+
 /* MAIN LAYOUT */
 .container {
   max-width: 1500px;
