@@ -31,6 +31,12 @@ body {
   gap: 48px;
 }
 
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ELEMENTS */
 
 .logo {
@@ -42,16 +48,6 @@ body {
 .logo img {
   width: 68px;
   height: 68px;
-}
-
-.fact-form {
-  background-color: #44403c;
-  margin-bottom: 40px;
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  border-radius: 16px;
 }
 
 h1 {
@@ -80,6 +76,14 @@ h1 {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
 
 .tag {
@@ -168,6 +172,17 @@ ul {
   background-image: none;
 }
 
+/* FORM */
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
 .fact-form input,
 .fact-form select {
   width: 220px;
@@ -192,4 +207,20 @@ ul {
   font-weight: 600;
   font-size: 18px;
   margin-right: 18px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
 }
