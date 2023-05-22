@@ -15,12 +15,15 @@ body {
   display: None !important;
 }
 
-/* MAIN LAYOUT */
-/* .container {
-  max-width: 1500px;
-  margin: 0 auto;
-} */
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
 
+/* MAIN LAYOUT */
 #root {
   max-width: 1500px;
   margin: 0 auto;
