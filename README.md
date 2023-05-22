@@ -1,7 +1,12 @@
 # today-i-learned
+
+DEPLOYED:https://todayilearned-sint.netlify.app/
+
 https://uci.udemy.com/course/full-stack-crash-course/
 
+STATUS: COMPLETED
 
+Course Description
 *** Just released in December 2022 ***
 
 "I have already learned more in this class than in a $12,000 coding BootCamp (...). Before taking one of the Bootcamp on Udemy, you should take this class first" – Robert
