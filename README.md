@@ -4,7 +4,7 @@
 
 # DEPLOYED: https://todayilearned-sint.netlify.app/
 
-## STATUS: COMPLETED
+### STATUS: COMPLETED ✅
 
 ### Course Link:
 https://uci.udemy.com/course/full-stack-crash-course/
